@@ -58,3 +58,71 @@ The **Event Management System** is a web-based application that allows users to 
 #### Using GitHub CLI:
 ```bash
 gh repo clone mahedi007/event-management
+```
+Or using Git:
+```bash
+git clone https://github.com/mahedi007/event-management.git
+cd event-management
+```
+
+### **2. Setup the Database**
+1. Create a MySQL database named `event_management`.
+2. Import the SQL file located in `database/event_management.sql` into your database.
+
+### **3. Configure Database Connection**
+1. Open the `config/db_connection.php` file.
+2. Update the database credentials with your own:
+
+```php
+$host = 'localhost'; 
+$username = 'your_db_user'; 
+$password = 'your_db_password'; 
+$database = 'event_management'; 
+```
+
+### **4. Start the Server**
+- If using XAMPP, move the project folder to `htdocs` and start Apache & MySQL.
+- If using a local PHP server, navigate to the project directory and run:
+
+```bash
+php -S localhost:8000
+```
+
+### **5. Access the Application**
+Open your browser and go to:
+```
+http://localhost/event-management/
+```
+
+Use the test login credentials:
+```makefile
+Email: user@email.com  
+Password: bangladesh24  
+```
+
+---
+
+## **Security & Best Practices Implemented**
+✅ **Password Hashing** - User passwords are securely stored.  
+✅ **Prepared Statements** - Prevents SQL injection.  
+✅ **Client-Side & Server-Side Validation** - Ensures valid data input.  
+✅ **Role-Based Access Control** - Only authorized users can manage events.  
+
+---
+
+## **Live Demo**
+👉 **Live URL:** [YOUR LIVE DEMO LINK HERE]
+
+---
+
+## **GitHub Repository**
+🔗 **Repo Link:** [https://github.com/mahedi007/event-management](https://github.com/mahedi007/event-management)  
+📥 **Clone with GitHub CLI:**
+```bash
+gh repo clone mahedi007/event-management
+```
+
+---
+
+## **Author**
+Developed by **S.M. Mahedi Hasan** 🚀
