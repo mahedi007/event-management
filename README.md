@@ -111,7 +111,7 @@ Password: bangladesh24
 ---
 
 ## **Live Demo**
-👉 **Live URL:** [YOUR LIVE DEMO LINK HERE]
+👉 **Live URL:** https://events.whizbd.com
 
 ---
 
