@@ -1,5 +1,5 @@
 <?php
-require dirname(__DIR__) . '../config/db_connection.php';
+require '../config/db_connection.php';
 
 if (!isset($_GET['event_id']) || !isset($_GET['query'])) {
     die("Invalid parameters.");
