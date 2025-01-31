@@ -1,0 +1,67 @@
+       /* Background */
+        body {
+            background: linear-gradient(135deg, #007bff,rgb(242, 163, 16));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+        }
+        .title-text {
+            color: #ff9800 !important;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            color: #fff;
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+        }
+        .event-card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+            color: #fff;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.3);
+        }
+        .event-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, #ff9800, #fcff5e);
+            transition: 0.5s;
+        }
+        .event-card:hover::before {
+            left: 100%;
+        }
+        .btn-primary {
+            background: #ff9800;
+            border: none;
+            padding: 10px;
+            border-radius: 8px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+        .btn-primary:hover {
+            background: #ff9966;
+            box-shadow: 0px 4px 10px rgba(255, 153, 102, 0.6);
+        }
+        .btn-secondary {
+            margin-top: 20px;
+            font-weight: bold;
+        }
